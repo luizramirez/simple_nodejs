@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/luizramirez/simple_nodejs/issues"
   },
-  "homepage": "https://github.com/luizramirez/simple_nodejs#readme"
+  "homepage": "https://github.com/luizramirez/simple_nodejs#readme",
+  "dependencies": {
+    "eslint": "^8.13.0"
+  }
 }
