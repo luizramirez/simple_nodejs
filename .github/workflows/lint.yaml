@@ -1,0 +1,21 @@
+name: 'lint-action'
+on: [pull_request]
+jobs:
+  Eslint-execution:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out git repository
+        uses: actions/checkout@v2
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run linter
+        uses: bradennapier/eslint-plus-action@v3.4.2
+        with:
+          issueSummary: false
