@@ -1,5 +1,8 @@
 name: 'lint-action'
-on: [pull_request]
+on:
+  push:
+    branches : [main]
+  
 jobs:
   Eslint-execution:
     runs-on: ubuntu-latest
